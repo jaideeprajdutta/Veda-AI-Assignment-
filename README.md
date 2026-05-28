@@ -22,7 +22,13 @@ The generation runs **asynchronously** through a robust job queue, providing **r
 
 Built to the provided Figma design system (Bricolage Grotesque, brand gradient `#FF5623→#E56820`, the exact tokens and screens).
 
-### Highlights
+---
+
+## Why VedaAI?
+
+As a developer, I noticed that teachers spend a significant amount of time on the administrative task of creating and formatting assessments. VedaAI was built to automate the heavy lifting—question generation, formatting, and answer key creation—allowing teachers to focus on what matters most: **teaching**.
+
+### Key Features
 - **Async pipeline** — request → BullMQ job → worker → store → WebSocket push. The API never blocks on the LLM.
 - **Structured, validated output** — the model returns JSON enforced by a schema and re‑validated with **Zod** (with one self‑repair retry). Raw LLM text is never rendered.
 - **Version history** — every regenerate is kept as a new version; switch between or delete versions.
