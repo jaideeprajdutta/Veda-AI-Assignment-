@@ -190,6 +190,13 @@ See **[DEPLOY.md](./DEPLOY.md)** for the full step‑by‑step guide, Dockerfile
 
 ---
 
+## Author
+
+**Jaideep Raj Dutta**  
+Software Engineer & Creator of VedaAI. Passionate about building AI-driven tools that empower educators and students.
+
+---
+
 ## License
 
 Bricolage Grotesque is licensed under the SIL Open Font License (see the font archive).
