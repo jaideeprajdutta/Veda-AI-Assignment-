@@ -16,7 +16,9 @@ Next.js · TypeScript · Express · MongoDB · Redis · BullMQ · WebSockets · 
 
 ## Overview
 
-VedaAI lets a teacher create an assignment (subject inferred by AI, due date, question types with counts & marks, optional source upload, extra instructions), then generates an exam‑ready question paper using an LLM. Generation runs **asynchronously** through a job queue and the UI updates **live** as the paper is produced. The result is rendered as a clean, printable exam paper with sections, difficulty tags, marks, an answer key, **version history**, and **PDF export**.
+VedaAI is my vision for an intelligent assistant that empowers teachers to bridge the gap between curriculum planning and assessment. It allows a teacher to describe an assignment (subject inferred by AI, due date, question types with counts & marks, optional source upload, extra instructions), and then generates an exam‑ready question paper using state-of-the-art LLMs. 
+
+The generation runs **asynchronously** through a robust job queue, providing **real-time feedback** via WebSockets. The final result is a clean, printable exam paper featuring automated sections, difficulty tagging, marks distribution, and a comprehensive answer key. With **version history** and **PDF export**, it provides a complete workflow for modern educators.
 
 Built to the provided Figma design system (Bricolage Grotesque, brand gradient `#FF5623→#E56820`, the exact tokens and screens).
 
