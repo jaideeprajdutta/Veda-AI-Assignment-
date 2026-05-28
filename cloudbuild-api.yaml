@@ -1,0 +1,59 @@
+# Build + deploy the api+worker image on every push to main.
+# Triggered by Cloud Build when apps/api/** or packages/shared/** changes.
+steps:
+  # 1. Build the image (context = repo root so the monorepo + shared package work).
+  - id: build
+    name: gcr.io/cloud-builders/docker
+    args:
+      - build
+      - -f
+      - apps/api/Dockerfile
+      - -t
+      - asia-south1-docker.pkg.dev/$PROJECT_ID/vedaai/api:$SHORT_SHA
+      - -t
+      - asia-south1-docker.pkg.dev/$PROJECT_ID/vedaai/api:latest
+      - .
+
+  # 2. Push both tags.
+  - id: push
+    name: gcr.io/cloud-builders/docker
+    args:
+      - push
+      - --all-tags
+      - asia-south1-docker.pkg.dev/$PROJECT_ID/vedaai/api
+
+  # 3. Roll out to the api service.
+  - id: deploy-api
+    name: gcr.io/google.com/cloudsdktool/cloud-sdk
+    entrypoint: gcloud
+    args:
+      - run
+      - deploy
+      - vedaai-api
+      - --image=asia-south1-docker.pkg.dev/$PROJECT_ID/vedaai/api:$SHORT_SHA
+      - --region=asia-south1
+      - --platform=managed
+      - --quiet
+
+  # 4. Roll out to the worker service (same image, different entrypoint).
+  - id: deploy-worker
+    name: gcr.io/google.com/cloudsdktool/cloud-sdk
+    entrypoint: gcloud
+    args:
+      - run
+      - deploy
+      - vedaai-worker
+      - --image=asia-south1-docker.pkg.dev/$PROJECT_ID/vedaai/api:$SHORT_SHA
+      - --region=asia-south1
+      - --platform=managed
+      - --command=node
+      - --args=dist/worker.js
+      - --quiet
+
+images:
+  - asia-south1-docker.pkg.dev/$PROJECT_ID/vedaai/api:$SHORT_SHA
+  - asia-south1-docker.pkg.dev/$PROJECT_ID/vedaai/api:latest
+
+options:
+  logging: CLOUD_LOGGING_ONLY
+timeout: 1200s

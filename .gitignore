@@ -1,0 +1,33 @@
+node_modules/
+dist/
+.next/
+out/
+build/
+coverage/
+
+# env
+.env
+.env.local
+.env.*.local
+!.env.example
+
+# logs
+*.log
+npm-debug.log*
+
+# os / editor
+.DS_Store
+.idea/
+.vscode/
+*.swp
+
+# agent / tooling artifacts (not project code)
+.agents/
+skills-lock.json
+/public/
+
+# uploads / generated
+uploads/
+tmp/
+*.pdf
+!docs/**/*.pdf
