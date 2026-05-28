@@ -1,14 +1,18 @@
 <div align="center">
 
-# VedaAI — AI Assessment Creator by Jaideep Raj Dutta
+# 📝 VedaAI — AI Assessment Creator
+### Built with Passion by **Jaideep Raj Dutta**
+
+[![Next.js](https://img.shields.io/badge/Next.js-14-black?style=flat-square&logo=next.js)](https://nextjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?style=flat-square&logo=typescript)](https://www.typescriptlang.org/)
+[![Express](https://img.shields.io/badge/Express-4-lightgrey?style=flat-square&logo=express)](https://expressjs.com/)
+[![MongoDB](https://img.shields.io/badge/MongoDB-DB-green?style=flat-square&logo=mongodb)](https://www.mongodb.com/)
+[![Redis](https://img.shields.io/badge/Redis-Cache-red?style=flat-square&logo=redis)](https://redis.io/)
+[![Google Gemini](https://img.shields.io/badge/AI-Gemini_Flash-orange?style=flat-square&logo=google-gemini)](https://deepmind.google/technologies/gemini/)
 
 **Teachers describe an assignment → AI generates a structured question paper → they review, regenerate, version, and export it — with real‑time generation status over WebSockets.**
 
-Next.js · TypeScript · Express · MongoDB · Redis · BullMQ · WebSockets · Google Gemini
-
-**Live:** https://veda-ai-assignment-web-delta.vercel.app/
-&nbsp;·&nbsp; **API:** https://vedaai-api-439420707140.asia-south1.run.app
-&nbsp;·&nbsp; deployed on Google Cloud Run (asia‑south1)
+[🌐 Live Demo](https://veda-ai-assignment-web-delta.vercel.app/) • [🚀 API Docs](https://vedaai-api-439420707140.asia-south1.run.app) • [📄 Deployment Guide](./DEPLOY.md)
 
 </div>
 
