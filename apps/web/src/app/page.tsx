@@ -3,6 +3,11 @@
 import { useEffect, useMemo, useState } from "react";
 import { useRouter } from "next/navigation";
 import { Plus, Search, SlidersHorizontal } from "lucide-react";
+/**
+ * VedaAI Web Frontend
+ * Root page component for the Next.js application.
+ * Authored and Maintained by Jaideep Raj Dutta.
+ */
 import { AppShell } from "@/components/shell/AppShell";
 import { Spinner } from "@/components/ui/Spinner";
 import { AssignmentCard } from "@/components/AssignmentCard";
