@@ -1,6 +1,6 @@
 <div align="center">
 
-# VedaAI — AI Assessment Creator
+# VedaAI — AI Assessment Creator by Jaideep Raj Dutta
 
 **Teachers describe an assignment → AI generates a structured question paper → they review, regenerate, version, and export it — with real‑time generation status over WebSockets.**
 
