@@ -70,6 +70,8 @@ Built to the provided Figma design system (Bricolage Grotesque, brand gradient `
 
 ## Tech stack
 
+This project leverages a modern, production-grade stack that I've carefully selected for performance, type safety, and scalability:
+
 | Layer | Tech |
 |-------|------|
 | Frontend | Next.js 14 (App Router) · TypeScript · Tailwind · **Zustand** · socket.io‑client · React Hook Form + Zod |
