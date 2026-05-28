@@ -1,3 +1,8 @@
+/**
+ * VedaAI API Server
+ * Main entry point for the Express application and Socket.io integration.
+ * Authored and Maintained by Jaideep Raj Dutta.
+ */
 import express, {
   type NextFunction,
   type Request,
