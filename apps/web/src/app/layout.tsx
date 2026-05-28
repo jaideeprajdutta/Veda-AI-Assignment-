@@ -3,8 +3,7 @@ import localFont from "next/font/local";
 import { Inter } from "next/font/google";
 import "./globals.css";
 
-// Primary typeface — the exact Bricolage Grotesque variable font shipped in the
-// repo (Bricolage-Grotesque.zip), self-hosted via next/font/local.
+// Primary typeface — Bricolage Grotesque variable font self-hosted via next/font/local.
 const bricolage = localFont({
   src: "../fonts/BricolageGrotesque.ttf",
   variable: "--font-bricolage",
