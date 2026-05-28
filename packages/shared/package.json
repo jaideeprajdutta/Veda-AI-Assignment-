@@ -2,6 +2,7 @@
   "name": "@vedaai/shared",
   "version": "1.0.0",
   "private": true,
+  "author": "Jaideep Raj Dutta",
   "main": "./src/index.ts",
   "types": "./src/index.ts",
   "exports": {
