@@ -11,6 +11,9 @@ coverage/
 .env.*.local
 !.env.example
 
+# TypeScript build info
+*.tsbuildinfo
+
 # logs
 *.log
 npm-debug.log*
