@@ -50,10 +50,10 @@ export function TopBar({ crumbs }: { crumbs: string[] }) {
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src="/figma/user-avatar.jpg"
-          alt="John Doe"
+          alt="Jaideep Raj Dutta"
           className="h-8 w-8 rounded-full object-cover"
         />
-        <span className="hidden text-[16px] font-semibold text-ink-strong sm:block">Jagadeesh Potupureddy</span>
+        <span className="hidden text-[16px] font-semibold text-ink-strong sm:block">Jaideep Raj Dutta</span>
         <ChevronDown size={20} strokeWidth={1.8} className="text-ink-soft" />
       </div>
     </header>
