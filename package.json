@@ -2,6 +2,7 @@
   "name": "vedaai",
   "version": "1.0.0",
   "private": true,
+  "author": "Jaideep Raj Dutta",
   "description": "VedaAI - AI Assessment Creator",
   "workspaces": [
     "packages/*",
