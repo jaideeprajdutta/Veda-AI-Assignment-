@@ -117,6 +117,8 @@ vedaai/
 
 ## Getting started (local)
 
+Follow these steps to get a local instance of VedaAI running on your machine:
+
 ### Prerequisites
 - Node 20+ and npm
 - Docker (for local Redis) — or any Redis instance
